@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import IntroShow from '../components/IntroShow'
+
 import profilePic from '../images/brad.png'
 import codePen from '../images/Codepen.png'
 import gitHub from '../images/GitHub.png'
@@ -21,28 +23,7 @@ const IndexPage = () => (
             <div className="intro">
               <h1>Hi, my name is Brad and I am a</h1>
             </div>
-            <div className="textShow">
-              <div className="textSlider fade">
-                <h1>
-                  <strong>DEVELOPER</strong>
-                </h1>
-              </div>
-              <div className="textSlider fade">
-                <h1>
-                  <strong>M.B.A.</strong>
-                </h1>
-              </div>
-              <div className="textSlider fade">
-                <h1>
-                  <strong>VETERAN</strong>
-                </h1>
-              </div>
-              <div className="textSlider fade">
-                <h1>
-                  <strong>FOODIE</strong>
-                </h1>
-              </div>
-            </div>
+            <IntroShow />
           </div>
         </div>
         <div className="row">
