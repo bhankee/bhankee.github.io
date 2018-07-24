@@ -622,3 +622,423 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+
+/* TRANSFERRED CSS */
+/* Main Elements */
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+.jumbotron {
+  background-color: #29b5d8;
+  position: relative;
+  height: 950px;
+  padding: 0;
+  margin: 0;
+  -webkit-animation-name: background;
+  -webkit-animation-duration: 6s;
+  animation-name: background;
+  animation-duration: 6s;
+}
+/* Nav Bar */
+
+.navbar-inverse {
+  background: #076780;
+  border: none;
+  border-radius: 0;
+  margin-bottom: auto;    
+}
+
+.navbar-nav>li>a {
+  padding-top: 25px !important;
+  padding-bottom: 5px !important;
+}
+
+.navbar-header>a {
+  padding-top: 25px !important;
+  padding-bottom: 5px !important;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+  font-size: 18px;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+  color: #ffd989;
+  /*Sets the text hover color on navbar*/
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+  background: dodgerblue;
+  /*color for active box in nav*/
+}
+.navPos {
+  margin-left:70px;
+}
+
+.myPic {
+  max-width: 300px;
+  max-height: auto;
+  margin: 50px auto 0px auto;
+  text-align: center;
+  display: block;
+}
+.hankeeLogo{
+  width:35%;
+  height: auto;
+  margin-top: -10px ;    
+}
+
+canvas {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  
+}
+
+.intro {
+  color: white;
+  text-align: center;
+  margin: 40px auto 0px auto;
+}
+
+.intro h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 40px;
+}
+
+.textShow h1 {
+  color: #ffd989;
+  font-family: 'Amatica SC', cursive;
+  font-size: 60px;
+  text-align: center;
+  margin: 0px auto 0px auto;
+}
+
+.glyph {
+  text-align: center;
+}
+
+.glyphicon {
+  font-size: 86px;
+  font-weight: 100;
+  line-height: 2;
+  color: #cfcdc9;
+  margin-top:20px;
+}
+
+/* Backgrounds */
+
+.middleTwo {
+  position: relative;
+  background: #f7bc4f;
+}
+
+.bottomOne {
+  position: relative;
+  background-color: #063857;
+  width: auto;
+  height: 300px;
+  z-index: 2;
+}
+
+.bottomTwo {
+  position: relative;
+  background-color: #0c3047;
+  width: auto;
+  height: 650px;
+  z-index: 2;
+}
+/* Text Headings */
+
+.myWork {
+  font-size: 78px;
+  color: #387fc2;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  margin: 80px auto 10px auto;
+}
+.projCaption{
+  color:#d8cdcd;
+  margin:0px 5px;
+  text-align: center;
+  padding: 5px;
+  background-color: grey;
+  border-radius: 15px;
+}
+
+.appCard {
+  height: auto;
+  margin:30px auto 30px auto;
+  
+}
+
+.cardImage {
+  width: 100%;
+  height: auto;
+  border: 2px solid white;
+  border-radius: 50px;
+  object-fit: cover;
+ 
+}
+.cardWrapper {    
+  display: table;
+  margin: 10px auto 5px auto;
+  position:relative;
+  
+}
+
+
+.overlay{
+  position: absolute;
+  top: 90px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;   
+
+}
+.overlay:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 50%;
+}
+.btn-xlg {
+  padding: 5px 5px;
+  font-size: 16px;   
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+}
+.separate {
+  width: 100%;
+  height: 5px;
+  background: white;
+  margin-top: -200px;
+}
+.buttonPodcast {
+  background-color: #0c3047;
+  text-align: center;
+  padding-bottom:100px;
+}
+.btn-warning {
+  margin-bottom: 100px;
+}
+/* List Styles */
+
+ul p {
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-family: 'Dancing Script', cursive;
+  color: #1F447F;
+}
+
+ul span {
+  font-size: 26px;
+  font-family: 'Ledger', serif;
+}
+
+ul img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+li {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+li span {
+  margin-left: 20px;
+  padding: 20px;
+}
+
+.logo {
+  max-width: 60px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu Logos */
+.socLink{
+  margin:100px auto 20px auto;
+}
+.socMedia {
+  text-align: center;  
+  margin: 10px auto 10px auto; 
+}
+
+.codeLogo {
+  max-width: 100px;
+  height: auto;   
+}
+.gitLogo {
+  max-width: 60px;
+  height: auto;   
+}
+
+.resume {
+  margin: auto;
+}
+
+.aboutResume {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.logoGrow {
+  transition: all .2s ease-in-out;
+}
+
+.logoGrow:hover {
+  transform: scale(1.2);
+  text-decoration: none;
+  color: #4286f4;
+}
+
+.logoGrow:hover a {
+  transform: scale(1.2);
+  text-decoration: none;
+  color: #0c3047;
+}
+
+.logoGrow:hover{
+  transform: scale(1.2);
+  text-decoration: none;
+  color: #4286f4;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}
+
+.bottomFooter {
+  width: auto;
+  height: 110px;
+  background-color: #0c3047;
+}
+
+.footer {
+  text-align: center;
+  z-index: 1;
+}
+
+.footer p {
+  margin-top: 40px;
+}
+
+.footer li {
+  list-style: none;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer li span {
+  padding: 10px;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+.fa-coffee:before {
+  content: "\f0f4";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  /*--adjust as necessary--*/
+  color: #efc262;
+  font-size: 20px;
+  margin-left: -20px;
+  margin-top: 5px;
+  vertical-align: middle;
+}
+
+.footer p {
+  color: white;
+}
+
+.footer li {
+  color: white;
+}
+
+/* Media Queries*/
+/* Small devices */
+@media (min-width: 575px) { }
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) { 
+  .appCard {
+      height: 700px;
+      margin:100px auto 100px auto;
+  }
+  .overlay{        
+      top: 350px; 
+  }
+  .btn-xlg {
+      padding: 10px 20px;
+      font-size: 24px;   
+      -webkit-border-radius: 8px;
+         -moz-border-radius: 8px;
+              border-radius: 8px;
+    }
+    .hankeeLogo{
+      width:50%;
+      margin: -10px auto auto 70px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1199px) { }
+
+/* CSS Animations */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4s;
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+/* Keyframes */
+
+@-webkit-keyframes background {
+  from {
+      background-color: #065468
+  }
+  to {
+      background-color: #29b5d8
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+      opacity: .9
+  }
+  to {
+      opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+      opacity: .9
+  }
+  to {
+      opacity: 1
+  }
+}

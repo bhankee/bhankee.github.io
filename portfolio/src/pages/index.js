@@ -1,89 +1,21 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import profilePic from '../images/brad.png'
+import codePen from '../images/Codepen.png'
+import gitHub from '../images/GitHub.png'
+import homeApp from '../images/homeApp.png'
+import linkedIn from '../images/linkedInLogo.png'
+import movieApp from '../images/movieAppFinal.png'
+
 const IndexPage = () => (
   <div>
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="#">
-        Navbar
-      </a>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon" />
-      </button>
-
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav mr-auto">
-          <li className="nav-item active">
-            <a className="nav-link" href="#">
-              Home <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Link
-            </a>
-          </li>
-          <li className="nav-item dropdown">
-            <a
-              className="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a className="dropdown-item" href="#">
-                Action
-              </a>
-              <a className="dropdown-item" href="#">
-                Another action
-              </a>
-              <div className="dropdown-divider" />
-              <a className="dropdown-item" href="#">
-                Something else here
-              </a>
-            </div>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link disabled" href="#">
-              Disabled
-            </a>
-          </li>
-        </ul>
-        <form className="form-inline my-2 my-lg-0">
-          <input
-            className="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />>
-          <button
-            className="btn btn-outline-success my-2 my-sm-0"
-            type="submit"
-          >
-            Search
-          </button>
-        </form>
-      </div>
-    </nav>
     <div className="jumbotron">
       <div className="container-fluid">
         <div className="row">
           <canvas id="rainCanvas" width="2000" height="100vh" />
           <div className="col-xs-12">
-            <img src="Photos/brad.png" className="myPic img-fluid" />
+            <img src={profilePic} className="myPic img-fluid" />
           </div>
           <div className="col-xs-12">
             <div className="intro">
@@ -127,7 +59,7 @@ const IndexPage = () => (
         </div>
         <div className="col-xs-12 appCard ">
           <div className="cardWrapper">
-            <img className="img-fluid cardImage " src="Graphics/homeApp.png" />
+            <img className="img-fluid cardImage " src={homeApp} />
             <div className="overlay">
               <a href="https://myhome-app.herokuapp.com">
                 <button className="btn btn-primary btn-xlg ">
@@ -142,10 +74,7 @@ const IndexPage = () => (
         </div>
         <div className="col-xs-12 appCard">
           <div className="cardWrapper">
-            <img
-              className="img-fluid cardImage"
-              src="Graphics/movieAppFinal.png"
-            />
+            <img className="img-fluid cardImage" src={movieApp} />
             <div className="overlay">
               <a href="https://quiet-lowlands-96991.herokuapp.com/movies">
                 <button className="btn btn-primary btn-xlg ">
@@ -164,7 +93,7 @@ const IndexPage = () => (
           <a href="https://codepen.io/bhank/">
             <img
               className="codeLogo logoGrow "
-              src="Graphics/Codepen2.png"
+              src={codePen}
               alt="Brad's Codepen"
             />
           </a>
@@ -173,7 +102,7 @@ const IndexPage = () => (
           <a href="https://github.com/bhankee">
             <img
               className="codeLogo logoGrow"
-              src="Graphics/GitHub1.png"
+              src={gitHub}
               alt="Brad's GitHub"
             />
           </a>
@@ -182,7 +111,7 @@ const IndexPage = () => (
           <a href="https://www.linkedin.com/in/brad-hankee">
             <img
               className="codeLogo logoGrow"
-              src="Graphics//linkedInLogo.png"
+              src={linkedIn}
               alt="Brad's LinkedIn"
             />
           </a>
