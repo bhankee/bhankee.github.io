@@ -10,7 +10,7 @@ import movieApp from '../images/movieAppFinal.png'
 
 const IndexPage = () => (
   <div>
-    <div className="jumbotron">
+    <div className="jumbotronFade">
       <div className="container-fluid">
         <div className="row">
           <canvas id="rainCanvas" width="2000" height="100vh" />

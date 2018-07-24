@@ -630,7 +630,7 @@ pre tt:after {
 body {
   font-family: 'Ubuntu', sans-serif;
 }
-.jumbotron {
+.jumbotronFade {
   background-color: #29b5d8;
   position: relative;
   height: 950px;
@@ -643,26 +643,23 @@ body {
 }
 /* Nav Bar */
 
-.navbar-inverse {
+
+.navbar-teal {
   background: #076780;
   border: none;
   border-radius: 0;
-  margin-bottom: auto;    
+  margin-bottom: auto;  
+  color:white;  
+  span{
+    color:white;
+    font-size: 18px;
+    margin-top: 25px;
+  }
 }
 
 .navbar-nav>li>a {
   padding-top: 25px !important;
   padding-bottom: 5px !important;
-}
-
-.navbar-header>a {
-  padding-top: 25px !important;
-  padding-bottom: 5px !important;
-}
-
-.navbar-inverse .navbar-nav>li>a {
-  color: white;
-  font-size: 18px;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover,
@@ -677,9 +674,7 @@ body {
   background: dodgerblue;
   /*color for active box in nav*/
 }
-.navPos {
-  margin-left:70px;
-}
+
 
 .myPic {
   max-width: 300px;
@@ -790,11 +785,8 @@ canvas {
 .cardWrapper {    
   display: table;
   margin: 10px auto 5px auto;
-  position:relative;
-  
+  position:relative;  
 }
-
-
 .overlay{
   position: absolute;
   top: 90px;
@@ -802,7 +794,6 @@ canvas {
   left: 0;
   right: 0;
   text-align: center;   
-
 }
 .overlay:before {
   content: ' ';
