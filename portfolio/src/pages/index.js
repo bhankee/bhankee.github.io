@@ -3,7 +3,6 @@ import Link from 'gatsby-link'
 
 import IntroShow from '../components/IntroShow'
 import Project from '../components/Project'
-import Loader from '../components/Loader'
 
 import profilePic from '../images/brad.png'
 import codePen from '../images/Codepen.png'
@@ -33,7 +32,6 @@ const IndexPage = () => (
               <h1> and I am a</h1>
             </div>
             <IntroShow />
-            <Loader />
           </div>
         </div>
       </div>

@@ -5,9 +5,9 @@ import bradLogo from '../images/BradLogo.png'
 
 const NavBar = () => (
   <nav className="navbar navbar-expand-lg navbar-light navbar-teal  ">
-    <a className="navbar-brand " href="">
+    <Link to="/" className="navbar-brand ">
       <img src={bradLogo} alt="Brad Hankee" className="hankeeLogo my-auto " />
-    </a>
+    </Link>
     <button
       className="navbar-toggler"
       type="button"

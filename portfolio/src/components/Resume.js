@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import ResumePDF from '../images/Resume-Brad_Hankee.pdf'
+import ResumePDF from '../images/resume.pdf'
 
 const Resume = () => (
   <div className="container-fluid">
