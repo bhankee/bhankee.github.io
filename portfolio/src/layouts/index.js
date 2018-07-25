@@ -22,6 +22,16 @@ const Layout = ({ children, data }) => (
             'sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm',
           crossorigin: 'anonymous',
         },
+        {
+          rel: 'stylesheet',
+          href:
+            'https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css',
+        },
+        {
+          rel: 'stylesheet',
+          href:
+            'https://fonts.googleapis.com/css?family=Ubuntu|Amatica+SC|Dancing+Script|Ledger',
+        },
       ]}
       script={[
         {
@@ -38,6 +48,9 @@ const Layout = ({ children, data }) => (
           integrity:
             'sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q',
           crossorigin: 'anonymous',
+        },
+        {
+          src: 'https://use.fontawesome.com/0a83d2d08d.js',
         },
       ]}
     />

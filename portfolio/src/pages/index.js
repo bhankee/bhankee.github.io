@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import IntroShow from '../components/IntroShow'
+import Project from '../components/Project'
 
 import profilePic from '../images/brad.png'
 import codePen from '../images/Codepen.png'
@@ -15,7 +16,6 @@ const IndexPage = () => (
     <div className="jumbotronFade">
       <div className="container-fluid">
         <div className="row justify-content-md-center">
-          <canvas id="rainCanvas" width="2000" height="100vh" />
           <div className="col-xs-auto">
             <img src={profilePic} className="myPic img-fluid" />
           </div>
@@ -30,48 +30,21 @@ const IndexPage = () => (
             <IntroShow />
           </div>
         </div>
-        <div className="row">
-          <div className="col-xs-12 glyph ">
-            <span className="glyphicon glyphicon-menu-down " />
-          </div>
-        </div>
       </div>
     </div>
     <div className="container">
-      <div className="row">
+      <div className="row justify-content-md-center">
         <div className="col-xs-12">
           <h1 className="myWork">My Work</h1>
         </div>
-        <div className="col-xs-12 appCard ">
-          <div className="cardWrapper">
-            <img className="img-fluid cardImage " src={homeApp} />
-            <div className="overlay">
-              <a href="https://myhome-app.herokuapp.com">
-                <button className="btn btn-primary btn-xlg ">
-                  Preview App
-                </button>
-              </a>
-            </div>
-          </div>
-          <h3 className="projCaption">
-            Tech Utilized: React, HTML5, CSS3, MongoDB, Meteor.js, Bootstrap3
-          </h3>
-        </div>
-        <div className="col-xs-12 appCard">
-          <div className="cardWrapper">
-            <img className="img-fluid cardImage" src={movieApp} />
-            <div className="overlay">
-              <a href="https://quiet-lowlands-96991.herokuapp.com/movies">
-                <button className="btn btn-primary btn-xlg ">
-                  Preview App
-                </button>
-              </a>
-            </div>
-          </div>
-          <h3 className="projCaption after">
-            Tech Utilized: Ruby on Rails5, HTML5, CSS3 and Sass, JavaScript
-          </h3>
-        </div>
+        <Project
+          image={homeApp}
+          tech="React, HTML5, CSS3, MongoDB, Meteor.js, Bootstrap3"
+        />
+        <Project
+          image={movieApp}
+          tech="Ruby on Rails5, HTML5, CSS3 and Sass, JavaScript"
+        />
       </div>
       <div className="row socLink">
         <div className="col-xs-12 col-sm-4 socMedia ">
@@ -107,7 +80,7 @@ const IndexPage = () => (
     <div className="container-fluid">
       <div className="row bottomFooter">
         <div className="col-xs-6 col-md-6 footer">
-          <p>Copyright &copy Brad Hankee 2017</p>
+          <p>Copyright &copy; Brad Hankee 2018</p>
         </div>
         <div className="col-xs-6 col-md-6 footer">
           <ul className="footer">

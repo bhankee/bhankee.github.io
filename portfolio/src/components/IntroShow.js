@@ -30,7 +30,16 @@ class IntroShow extends Component {
   }
 
   render() {
-    return <div className="wordShow">{this.state.currentWord}</div>
+    return (
+      <div>
+        <div className="wordShow">{this.state.currentWord}</div>
+        <div className="row justify-content-md-center">
+          <div className="col-xs-12  ">
+            <i className="fa fa-angle-down glyph" />
+          </div>
+        </div>
+      </div>
+    )
   }
 }
 
