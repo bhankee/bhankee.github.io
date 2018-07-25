@@ -5,14 +5,16 @@ class IntroShow extends Component {
     adjectives: ['Foodie', 'Developer', 'Veteran'],
     currentWord: '',
     wordInterval: 0,
+    intervalClear: '',
   }
 
   componentDidMount() {
     let wordInterval = setInterval(this.wordTimer, 1000)
+    this.setState({ intervalClear: wordInterval })
   }
   componentWillUnmount() {
     // use intervalId from the state to clear the interval
-    clearInterval(this.state.wordInterval)
+    clearInterval(this.state.intervalClear)
   }
 
   wordTimer = () => {
@@ -28,7 +30,7 @@ class IntroShow extends Component {
   }
 
   render() {
-    return <div>{this.state.currentWord}</div>
+    return <div className="wordShow">{this.state.currentWord}</div>
   }
 }
 

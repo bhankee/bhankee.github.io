@@ -14,14 +14,18 @@ const IndexPage = () => (
   <div>
     <div className="jumbotronFade">
       <div className="container-fluid">
-        <div className="row">
+        <div className="row justify-content-md-center">
           <canvas id="rainCanvas" width="2000" height="100vh" />
-          <div className="col-xs-12">
+          <div className="col-xs-auto">
             <img src={profilePic} className="myPic img-fluid" />
           </div>
+        </div>
+        <div className="row justify-content-md-center">
           <div className="col-xs-12">
             <div className="intro">
-              <h1>Hi, my name is Brad and I am a</h1>
+              <h1>Hi, my name is </h1>
+              <h1>Brad </h1>
+              <h1> and I am a</h1>
             </div>
             <IntroShow />
           </div>
