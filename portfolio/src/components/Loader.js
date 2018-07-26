@@ -5,7 +5,7 @@ class Loader extends Component {
     loading: true,
   }
   componentDidMount() {
-    setTimeout(() => this.setState({ loading: false }), 3000)
+    setTimeout(() => this.setState({ loading: false }), 2000)
   }
 
   render() {
