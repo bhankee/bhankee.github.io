@@ -48,6 +48,13 @@ const Layout = ({ children, data }) => (
           crossorigin: 'anonymous',
         },
         {
+          src:
+            "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js",
+          type: 'text/javascript',
+
+          crossorigin: 'anonymous',
+        },
+        {
           src: 'https://use.fontawesome.com/0a83d2d08d.js',
         },
       ]}
