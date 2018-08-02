@@ -15,7 +15,6 @@
   "keywords": ["gatsby"],
   "license": "MIT",
   "scripts": {
-    "gatsby build": "gatsby build",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
