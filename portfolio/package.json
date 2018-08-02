@@ -12,11 +12,10 @@
     "react-helmet": "^5.2.0",
     "react-pdf": "^3.0.5"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "scripts": {
+    "gatsby build": "gatsby build",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
