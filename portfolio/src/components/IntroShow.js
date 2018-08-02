@@ -9,7 +9,7 @@ class IntroShow extends Component {
   }
 
   componentDidMount() {
-    let wordInterval = setInterval(this.wordTimer, 1500)
+    let wordInterval = setInterval(this.wordTimer, 1000)
     this.setState({ intervalClear: wordInterval })
   }
   componentWillUnmount() {
@@ -33,7 +33,7 @@ class IntroShow extends Component {
     return (
       <div>
         <div className="wordShow">{this.state.currentWord}</div>
-        <div className="row justify-content-center">
+        <div className="row justify-content-md-center">
           <div className="col-xs-12  ">
             <i className="fa fa-angle-down glyph" />
           </div>

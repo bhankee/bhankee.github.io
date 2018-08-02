@@ -205,10 +205,9 @@ canvas {
   margin-bottom: 100px;
 }
 /* CSS loader */
-.lds-ellipsis {  
+.lds-ellipsis {
+  display: inline-block;
   position: relative;
-  top:35%;
-  margin:0 auto;
   width: 64px;
   height: 64px;
 }
@@ -262,7 +261,7 @@ canvas {
   }
 }
 #loaderWrapper{
-background-color: #29b5d8;
+background-color: rgb(100, 133, 243);
 bottom: 0;
 left: 0;
 position: fixed;

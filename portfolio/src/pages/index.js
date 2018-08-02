@@ -11,20 +11,16 @@ import homeApp from '../images/homeApp.png'
 import linkedIn from '../images/linkedInLogo.png'
 import movieApp from '../images/movieAppFinal.png'
 
-const timer = () => {
-  window.setTimeout(() => <Loader />, 1000)
-}
-
 const IndexPage = () => (
   <div>
     <div className="jumbotronFade">
       <div className="container-fluid">
-        <div className="row justify-content-center">
+        <div className="row justify-content-md-center">
           <div className="col-xs-auto">
             <img src={profilePic} className="myPic img-fluid" />
           </div>
         </div>
-        <div className="row justify-content-center">
+        <div className="row justify-content-md-center">
           <div className="col-xs-12">
             <div className="intro">
               <h1>Hi, my name is </h1>
@@ -37,7 +33,7 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="container">
-      <div className="row justify-content-center">
+      <div className="row justify-content-md-center">
         <div className="col-xs-12">
           <h1 className="myWork">My Work</h1>
         </div>
