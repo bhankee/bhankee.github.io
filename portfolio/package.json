@@ -9,18 +9,16 @@
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-sass": "^1.0.26",
     "react-helmet": "^5.2.0",
-    "react-pdf": "^3.0.5",
-    "serve": "^9.4.0"
+    "react-pdf": "^3.0.5"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve public/",
     "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "devDependencies": {
