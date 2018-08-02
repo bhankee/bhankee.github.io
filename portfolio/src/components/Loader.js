@@ -1,36 +1,31 @@
 import React, { Component } from 'react'
 
-class IntroShow extends Component {
+class Loader extends Component {
+  state = {
+    loading: true,
+  }
   componentDidMount() {
-<<<<<<< HEAD
-<<<<<<< HEAD
     setTimeout(() => this.setState({ loading: false }), 2000)
-||||||| 97068b9... Added state to display loader as timer.
-    setTimeout(() => this.setState({ loading: false }), 3000)
-=======
-    let wordInterval = setInterval(this.wordTimer, 1000)
-    this.setState({ intervalClear: wordInterval })
->>>>>>> parent of 97068b9... Added state to display loader as timer.
-||||||| 97068b9... Added state to display loader as timer.
-    setTimeout(() => this.setState({ loading: false }), 3000)
-=======
-    let wordInterval = setInterval(this.wordTimer, 1000)
-    this.setState({ intervalClear: wordInterval })
->>>>>>> parent of 97068b9... Added state to display loader as timer.
   }
 
   render() {
-    return (
-      <div id="loaderWrapper">
-        <div className="lds-ellipsis">
-          <div />
-          <div />
-          <div />
-          <div />
+    const loading = this.state.loading
+
+    if (loading) {
+      return (
+        <div id="loaderWrapper">
+          <div className="lds-ellipsis">
+            <div />
+            <div />
+            <div />
+            <div />
+          </div>
         </div>
-      </div>
-    )
+      )
+    } else {
+      return <div />
+    }
   }
 }
 
-export default IntroShow
+export default Loader

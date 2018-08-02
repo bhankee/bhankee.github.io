@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import 'bootstrap/dist/css/bootstrap.css'
 
 import NavBar from '../components/NavBar'
 import Loader from '../components/Loader'
@@ -18,13 +19,6 @@ const Layout = ({ children, data }) => (
         {
           rel: 'stylesheet',
           href:
-            'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css',
-
-          crossorigin: 'anonymous',
-        },
-        {
-          rel: 'stylesheet',
-          href:
             'https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css',
         },
         {
@@ -35,25 +29,12 @@ const Layout = ({ children, data }) => (
       ]}
       script={[
         {
-          src: 'https://code.jquery.com/jquery-3.2.1.slim.min.js',
+          src: 'https://code.jquery.com/jquery-3.3.1.min.js',
           type: 'text/javascript',
 
-          crossorigin: 'anonymous',
+          crossOrigin: 'anonymous',
         },
-        {
-          src:
-            'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js',
-          type: 'text/javascript',
 
-          crossorigin: 'anonymous',
-        },
-        {
-          src:
-            "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js",
-          type: 'text/javascript',
-
-          crossorigin: 'anonymous',
-        },
         {
           src: 'https://use.fontawesome.com/0a83d2d08d.js',
         },
